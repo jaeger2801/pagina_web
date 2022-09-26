@@ -68,7 +68,7 @@ margin: 0;
 
 .banner-inicial{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-image: url("src/Banner_inicial_img.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,13 @@ margin: 0;
 }
 
 .banner-texto{
+    justify-content: flex-start;
     position: relative;
+}
+
+.iamgen-blur{
+    margin-top: 129px;
+    margin-left: 90px;
 }
 
 .texto-oversize{
