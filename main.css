@@ -191,6 +191,22 @@ hr {
     
 }
 
+.button.is-info {
+    margin-top: 40px;
+    background-color: #0468BF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-color: transparent;
+    color: #fff;
+
+}
+
+.imagen-se-aletosa{
+    margin-top: 25px;
+}
+
+
 
 
 
