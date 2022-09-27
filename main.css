@@ -206,7 +206,45 @@ hr {
     margin-top: 25px;
 }
 
+/* ---------------------------------------------------------------------------------- */
 
+/* SECCION LO ALETOSO DEL MOMENTO */
+
+.lo-aletoso-del-momento{
+    margin-top: 180px;
+    
+    display: grid;
+    justify-content: center;
+}
+
+.titulo-aletoso-del-momento{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 50px;
+
+    color: #464646;
+}
+
+.is-active{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    
+
+    color: #0468BF;
+}
+
+.is-inactive{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    
+
+    color: #464646;
+}
 
 
 
