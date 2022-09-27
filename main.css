@@ -76,7 +76,7 @@ margin: 0;
     align-content: center;
 }
 
-.is-half{
+.column.is-half{
     justify-content: flex-start;
     align-content: center;
     align-items: center;
@@ -140,6 +140,66 @@ margin: 0;
     
 }
 
+/* ------------------------------------------------------------------------------------------ */
+/* Configuración seccion se aletoso */
+
+.columns{
+    margin: 100px;
+}
+
+.column{
+    display: grid;
+    justify-content:space-around;
+    box-sizing: inherit;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    line-height: 20px;
+}
+
+.texto-se-aletoso{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+
+    color: #464646
+    
+    /* margin-bottom: 20px; */
+}
+
+hr {
+    padding-left: 40%;
+    width: 92%;
+    background-color: #464646;
+   
+    /* display: block; */
+    height: 2px;
+    margin: 10.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-cuerpo-se-aletoso{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+
+    color: #464646;
+    
+}
+
+
+
+
+
+
+/* CONFIGURACION MEDIA QUARY */
+
+/* configuración banner inicial */
+
 @media screen and (min-width: 180px) and (max-width: 1024px){
 
     .banner-inicial{
@@ -155,8 +215,6 @@ margin: 0;
         align-content: center;
         
     }
-
-
 
     .imagen-modelo-banner{
         size: 50px;
