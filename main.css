@@ -324,6 +324,17 @@ hr {
     align-content: center;
 }
 
+.column2{
+    padding: 10px;
+    display: flex;
+    justify-content:center ;
+    box-sizing: inherit;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    line-height: 20px;
+}
 
 
 
