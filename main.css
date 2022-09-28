@@ -324,16 +324,13 @@ hr {
     align-content: center;
 }
 
-.column2{
-    padding: 10px;
+.columns2{
     display: flex;
-    justify-content:center ;
-    box-sizing: inherit;
-    align-items: center;
-    align-content: center;
-    align-self: center;
+    margin: 50px;  
+}
 
-    line-height: 20px;
+.column.is-three-fifths{
+    padding: 12px;
 }
 
 
