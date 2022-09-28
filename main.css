@@ -144,7 +144,7 @@ margin: 0;
 /* Configuración seccion se aletoso */
 
 .columns{
-    margin: 100px;
+    margin: 50px;
 }
 
 .column{
@@ -211,8 +211,7 @@ hr {
 /* SECCION LO ALETOSO DEL MOMENTO */
 
 .lo-aletoso-del-momento{
-    margin-top: 180px;
-    
+    margin-top: 110px;
     display: grid;
     justify-content: center;
 }
@@ -253,7 +252,7 @@ hr {
 .column1{
     padding: 10px;
     display: grid;
-    justify-content:space-around;
+    justify-content:center ;
     box-sizing: inherit;
     align-items: center;
     align-content: center;
@@ -261,6 +260,52 @@ hr {
 
     line-height: 20px;
 }
+
+.texto-producto{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.texto-producto> span{
+    font-weight: 600;
+}
+
+.texto-producto1{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.texto-producto1> span{
+    font-weight: 600;
+}
+
+.texto-producto2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.texto-producto2> span{
+    font-weight: 600;
+}
+
+.texto-producto3{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.texto-producto3> span{
+    font-weight: 600;
+}
+
+.texto-producto4{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.texto-producto4> span{
+    font-weight: 600;
+}
+
 
 
 
@@ -294,10 +339,11 @@ hr {
         margin-left: 50%;
     }
 
+    /* CONFIGURACION SECCION LO ALETOSO DEL MOMENTO */
+
+    .columns.is-mobile{
+        
+    }
+
     
 }
-
-
-
-
-
