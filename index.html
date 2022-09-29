@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>merx aletosx</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -129,26 +130,28 @@
       <span class="titulo-aletoso-del-momento">LO ALETOSO DEL MOMENTO</span>
 
       <div class="tabs is-centered">
-        <ul>
-          <li class="is-active"> <a>Novedades</a></li>
+        <ul class="options">
 
-          <li class="is-inactive"><a>Mas aletosos</a></li>
-          <li class="is-inactive"><a>Destacados</a></li>
+          <li id="option1" class="option is-active"> <a>Novedades</a></li>
+          <li id="option2" class="option is-inactive"><a>Mas aletosos</a></li>
+          <li id="option3" class="option is-inactive"><a>Destacados</a></li>
+
         </ul>
       </div>
 
       <article class="columns is-mobile">
-        <div class="column1">
+        <div id="content1" class="column1 column1-active">
           <img class="sombrero-imagen" src="./src/sombrero-aletoso.png" alt="">
 
           <h4 class="texto-producto">Sombrero aletoso <br><span> $34.000 </span> </h4>
         </div>
 
-        <div class="column1">
+        <div id="content1" class="column1 column1-active">
           <img class="camisa-imagen" src="./src/camisa.png" alt="">
 
           <h4 class="texto-producto1">Camisa oversize<br><span> $40.000 </span></h4>
         </div>
+
 
         <div class="column1">
           <img class="tenis-imagen" src="./src/tenis-aletosos.png" alt="">
@@ -156,17 +159,20 @@
           <h4 class="texto-producto2">Tenis aletosos<br><span> $40.000 </span></h4>
         </div>
 
+
         <div class="column1">
           <img class="lentes-imagen" src="./src/lentes-verano.png" alt="">
        
           <h4 class="texto-producto3">Gafas rosas aletosas<br><span> $25.000 </span></h4>
         </div>
 
+
         <div class="column1">
           <img class="gorra-imagen" src="./src/gorra-aletosa.png" alt="">
         
           <h4 class="texto-producto4">Gorra mela<br><span> $30.000 </span></h4>
         </div>
+
 
       </article>
 

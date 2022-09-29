@@ -76,6 +76,11 @@ margin: 0;
     text-decoration: none;
     padding: 10px 50px;
     cursor: pointer;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
 }
 
 .cont-menu ul li:hover{
