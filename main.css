@@ -324,6 +324,9 @@ hr {
     align-content: center;
 }
 
+/* ------------------------------------------------------------------------ */
+/* Seccion galeria de imagenes */
+
 .columns2{
     display: flex;
     margin: 50px;  
@@ -331,6 +334,10 @@ hr {
 
 .column.is-three-fifths{
     padding: 12px;
+}
+
+.primera-imagen{
+    width: 100%;
 }
 
 
