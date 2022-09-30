@@ -257,6 +257,7 @@ hr {
 .texto-imagen{
     display: grid;
 
+    margin-top: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 200;
@@ -285,12 +286,11 @@ hr {
     align-content: center;
 }
 
+
 .tab-container {
    margin-top: 100px; 
    width: 100%;
    height: 600px;
-   box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
-   border-radius: 5px;
    overflow: hidden;
 
 }
@@ -298,21 +298,22 @@ hr {
 .options {
     display: flex;
     width: 100%;
-    height: 15%;
+    height: 20px;
     list-style: none;
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .option {
     flex-grow: 1;
     text-align: center;
     line-height: 60px;
-    border: solid 1px rgba(4, 51, 78, .6);
-    color: #fff;
     cursor: pointer;
 
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 300;
     cursor: pointer;
 
     color: #1D1D1D;
@@ -320,11 +321,12 @@ hr {
 
 .option-active {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 800;
     cursor: pointer;
+    text-decoration: underline;
 
-    color: #1D1D1D;
+    color: #0468BF;
 }
 
 .contents {
@@ -341,22 +343,9 @@ hr {
 }
 
 .content-active {
-    background: var(--bg-active);
     display: block;
 }
 
-.content h3 {
-    text-align: center;
-    padding-bottom:  10px;
-    border-bottom: solid 1px rgba(255, 255, 255, .3);
-    letter-spacing: 2px;
-    margin: 10px;
-}
-
-.content p {
-    margin: 15px;
-    letter-spacing: 1px;
-}
 
 /*      */
 
