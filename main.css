@@ -253,6 +253,113 @@ hr {
 }
 
 /* ---------------------------------------------------------------------------------- */
+/* SECCION LO ALETOSO DEL MOMENTO 2.0 PRUEBA */
+.texto-imagen{
+    display: grid;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+
+    color: #1D1D1D;
+}
+
+.texto-imagen> span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+
+    color: #1D1D1D;
+}
+
+.column-prueba{
+    display: grid;
+    margin: 20px;
+    text-align: center;
+}
+
+.content.content-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tab-container {
+   margin-top: 100px; 
+   width: 100%;
+   height: 600px;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, .8);
+   border-radius: 5px;
+   overflow: hidden;
+
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    list-style: none;
+}
+
+.option {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 60px;
+    border: solid 1px rgba(4, 51, 78, .6);
+    color: #fff;
+    cursor: pointer;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+
+    color: #1D1D1D;
+}
+
+.option-active {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+
+    color: #1D1D1D;
+}
+
+.contents {
+    width: 100%;
+    height: 85%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: none;
+    padding: 20px;
+}
+
+.content-active {
+    background: var(--bg-active);
+    display: block;
+}
+
+.content h3 {
+    text-align: center;
+    padding-bottom:  10px;
+    border-bottom: solid 1px rgba(255, 255, 255, .3);
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.content p {
+    margin: 15px;
+    letter-spacing: 1px;
+}
+
+/*      */
+
 /* SECCION LO ALETOSO DEL MOMENTO */
 
 .lo-aletoso-del-momento{
@@ -573,6 +680,10 @@ hr {
         width: 100%;
         justify-content: center;
     }
+
+    /* CONFIGURACIÓN GALERIA DE IMÁGENES */
+
+
 
     /* CONFIGURACION FOOTER */
 
