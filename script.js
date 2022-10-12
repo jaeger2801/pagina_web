@@ -5,6 +5,7 @@ const content1 = document.getElementById('content1')
 const content2 = document.getElementById('content2')
 const content3 = document.getElementById('content3')
 
+
 let chose = 1
 
 const changeOption = () => {
