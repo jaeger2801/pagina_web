@@ -116,6 +116,11 @@ margin: 0;
 }
 
 /* CONFIGURACION DE LA LISTA DE PRODUCTOS AL PRESIONAR "NOVEDADES" */
+
+.products_discover{
+    width: 100%;
+}
+
 #all_discover_products {
     display: flex;
     flex-direction: row;
