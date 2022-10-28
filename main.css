@@ -38,6 +38,14 @@ margin: 0;
 }
 
 
+.navbar-item:hover{
+    font-weight: 600;
+    color: #8E04BF;
+
+    background-color: #ffffff;
+}
+
+
 .navbar-burger-icon{
     margin: 20px;
     vertical-align: middle;
@@ -204,6 +212,11 @@ margin: 0;
     line-height: 20px;
 }
 
+.column:hover{
+    /* scale: 1.04; */
+    cursor: pointer;
+}
+
 .texto-se-aletoso{
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -248,6 +261,10 @@ hr {
 
 }
 
+.button.is-info:hover{
+    scale: 1.04;
+}
+
 .imagen-se-aletosa{
     margin-top: 25px;
 }
@@ -289,6 +306,12 @@ hr {
     display: grid;
     margin: 20px;
     text-align: center;
+
+    cursor: pointer;
+}
+
+.column-prueba:hover{
+    scale: 1.04;
 }
 
 .content.content-active{
@@ -331,6 +354,13 @@ hr {
     margin-right: 20px;
 
     color: #1D1D1D;
+}
+
+.option:hover{
+    scale: 1.04;
+    font-weight: 800;
+    
+    color: #0468BF;
 }
 
 .option-active {
@@ -391,6 +421,11 @@ hr {
     align-self: center;
 }
 
+.column2:hover{
+    /* scale: 1.04; */
+    cursor: pointer;
+}
+
 .box{
     background-color: #fff;
     border-radius: 0px;
@@ -433,6 +468,12 @@ hr {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 100;
+
+    color: #ffffff;
+}
+
+.textos-footer:hover{
+    font-weight: 400;
 
     color: #ffffff;
 }
