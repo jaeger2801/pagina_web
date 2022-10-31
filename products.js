@@ -220,21 +220,22 @@ const productsList = [
 
 ]
 
-const list_products = document.getElementById("all_discover_products");
-pintar(all_discover_products);
+productosDestacados.innerHTML = "";
 
-function pintar(all_discover_products) {
-    all_discover_products.forEach((all_discover_product) => {
-   
-    all_discover_products.innerHTML += 
-    `<a href= './item.html?id=${all_discover_product.item}' class="card_list">
-    <figure class= "card_figure"><img class= "card_img" src="${all_discover_product.imagenProducto}"></figure>
-    <article class="card_article">
-        <p>${all_discover_product.precio}<p>
-        <p>${all_discover_product.material}</p>
-        <p>${all_discover_product.tipo}</p>
-        <p > ${all_discover_product.descuento}</p>
-    </article>
-</a>`
-  });
+const productosDestacados = document.getElementById("productos_destacados");
+mostrar(productsList);
+
+function mostrar(productsList) {
+    productsList.forEach((producto) => {
+        
+        productosDestacados.innerHTML += `<a href= './item.html?id=${product.}' class="card_list">
+        <figure class= "card_figure"><img class= "card_img" src="${product.}"></figure>
+        <article class="card_article">
+            <h2>${product.}</h2>
+            <p>${product.}</p>
+            <h3>${product.}</h3>
+            <h5 class="card_price"> ${product.}</h5>
+        </article>
+    </a>`
+    })
 }
