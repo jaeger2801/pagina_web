@@ -219,8 +219,10 @@ const productsList = [
     },
 
 ]
-
+function filtrado () {
 productosDestacados.innerHTML = "";
+
+}
 
 const productosDestacados = document.getElementById("productos_destacados");
 mostrar(productsList);
@@ -228,13 +230,13 @@ mostrar(productsList);
 function mostrar(productsList) {
     productsList.forEach((producto) => {
         
-        productosDestacados.innerHTML += `<a href= './item.html?id=${product.}' class="card_list">
-        <figure class= "card_figure"><img class= "card_img" src="${product.}"></figure>
+        productosDestacados.innerHTML += 
+        `<figure class= "card_figure"><img class= "card_img" src="${producto.imagenProducto}"></figure>
         <article class="card_article">
-            <h2>${product.}</h2>
-            <p>${product.}</p>
-            <h3>${product.}</h3>
-            <h5 class="card_price"> ${product.}</h5>
+            <h2>${producto.item}</h2>
+            <p>${producto.tipo}</p>
+            <h3>${producto.material}</h3>
+            <h5 class="card_price"> ${producto.precio}</h5>
         </article>
     </a>`
     })
