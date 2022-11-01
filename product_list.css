@@ -115,6 +115,8 @@ margin: 0;
     display: flex;
 }
 
+/* ----------------------------------------------------------------------------------------------- */
+
 /* CONFIGURACION DE LA LISTA DE PRODUCTOS AL PRESIONAR "NOVEDADES" */
 
 .products_discover{
@@ -132,6 +134,68 @@ margin: 0;
     padding-bottom: 45px;
     margin-inline: 16px;
 }
+
+.lista_productos_destacados{
+    padding-top: 40px;
+    width: 100%;
+}
+
+/* .tarjeta_producto {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
+
+.card_fil {
+  justify-content: center;
+  align-items: center;
+  align-content: center;  
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  background-color: rgb(209, 45, 45);
+  max-width: 100%;
+  position: relative;
+
+  margin-top: 20px;
+  
+}
+
+.card_figure{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
+
+.card_figure > img {
+    height: 100%;
+}
+
+.card_article {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.texto_precio {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800px;
+    font-size: 20px;
+
+    color: #8E04BF;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+    color: #8E8E8E;
+}
+
+
 
 
 /* ----------------------------------------------------------------------------- */
