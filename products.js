@@ -239,18 +239,35 @@ const productsList = [
     },
 
 ]
+
+const filtroDestacados = document.getElementById("filtro_destacados");
+
+filtroDestacados.addEventListener("ejecutaCambio", (e) => {filtrado()});
+
 function filtrado () {
 productosDestacados.innerHTML = "";
+
+const destacados = filtroDestacados.value || "";
+
+let filtracion = {};
+
+if (destacados === "DESTACADO" || destacados === "MOSTRAR_TODO"){
+    filtrado_productos;
+} else {
+    filtracion["detacado"] = destacados
+}
 
 }
 
 const productosDestacados = document.getElementById("productos_destacados");
+let filtrado_productos = productsList;
 mostrar(productsList);
 
 function mostrar(productsList) {
     productsList.forEach((producto) => {
         
         productosDestacados.innerHTML += 
+        
         `<a href= './item.html?id=${producto.num}' class="card_fil">
         <figure class= "card_figure"><img class= "card_img" src="${producto.imagenProducto}"></figure>
         <article class="card_article">
