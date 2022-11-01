@@ -245,6 +245,7 @@ const filtroDestacados = document.getElementById("filtro_destacados");
 filtroDestacados.addEventListener("ejecutaCambio", (e) => {filtrado()});
 
 function filtrado () {
+let productosParaFiltrar = [...productsList];
 productosDestacados.innerHTML = "";
 
 const destacados = filtroDestacados.value || "";
@@ -254,8 +255,16 @@ let filtracion = {};
 if (destacados === "DESTACADO" || destacados === "MOSTRAR_TODO"){
     filtrado_productos;
 } else {
-    filtracion["detacado"] = destacados
+    filtracion["destacado"] = destacados
 }
+
+const filtroProductos = productosParaFiltrar.filter( prod => {
+    return (
+        (filtracion['destacado']? prod.destacado === filtracion['destacado']:true)
+    )
+}
+
+)
 
 }
 
