@@ -212,7 +212,42 @@ h5 {
     color: #8E8E8E;
 }
 
+.texto_guia_filtrado{
+    background-color: #8E04BF;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
 
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.navbar-item{
+    color: #ffffff;
+}
+
+.navbar-item1 {
+    color: #1D1D1D;
+    display: block;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.texto_filtros{
+    justify-content: flex-start;
+    margin-left: 100px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
 
 
 /* ----------------------------------------------------------------------------- */
