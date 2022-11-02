@@ -240,33 +240,37 @@ const productsList = [
 
 ]
 
-const filtroDestacados = document.getElementById("filtro_destacados");
+const filter_tipo_prenda = document.getElementById("filter_tipo_prenda");
 
-filtroDestacados.addEventListener("ejecutaCambio", (e) => {filtrado()});
+filter_tipo_prenda.addEventListener("change", (e) => {filtrado()});
 
 function filtrado () {
-let productosParaFiltrar = [...productsList];
+let filtradoDeProductos = [...productsList];
+const tipo_prenda = filter_tipo_prenda.value || "";
 productosDestacados.innerHTML = "";
 
-const destacados = filtroDestacados.value || "";
 
-let filtracion = {};
+let filtros = {};
 
-if (destacados === "DESTACADO" || destacados === "MOSTRAR_TODO"){
-    filtrado_productos;
+if(tipo_prenda === "TIPO_PRENDA" || tipo_prenda === "Todo"){
+    filtrado_productos
 } else {
-    filtracion["destacado"] = destacados
+    filtros["tipo_prenda"] = tipo_prenda
 }
 
-const filtroProductos = productosParaFiltrar.filter( prod => {
-    return (
-        (filtracion['destacado']? prod.destacado === filtracion['destacado']:true)
-    )
-}
-
+const filtracion = filtradoDeProductos.filter(
+    p => {
+        return ((filtros['tipo_prenda']? p.tipo === filtros['tipo_prenda']: true)
+        )
+    }
 )
 
+mostrar(filtracion);
+mostrar();
+    
 }
+
+
 
 const productosDestacados = document.getElementById("productos_destacados");
 let filtrado_productos = productsList;
