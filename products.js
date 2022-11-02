@@ -99,7 +99,7 @@ const productsList = [
         item: "Pinta aletosa",
         precio: "80.000",
         descuento: "",
-        material: "80% algodon 20% algodon",
+        material: "80% algodón 20% poliester",
         sobreModelo: "El modelo mide 1.87 y usa talla XL",
         tipo: "Pinta",
         tipo2: "Completo"
@@ -241,12 +241,18 @@ const productsList = [
 ]
 
 const filter_tipo_prenda = document.getElementById("filter_tipo_prenda");
+const filter_tipo_material = document.getElementById("filter_tipo_material");
+const filter_tipo_seccion = document.getElementById("filter_tipo_seccion");
 
 filter_tipo_prenda.addEventListener("change", (e) => {filtrado()});
+filter_tipo_material.addEventListener("change", (e) => {filtrado()});
+filter_tipo_seccion.addEventListener("change", (e) => {filtrado()});
 
 function filtrado () {
 let filtradoDeProductos = [...productsList];
 const tipo_prenda = filter_tipo_prenda.value || "";
+const tipo_material = filter_tipo_material.value || "";
+const tipo_seccion = filter_tipo_seccion.value || "";
 productosDestacados.innerHTML = "";
 
 
@@ -258,9 +264,23 @@ if(tipo_prenda === "TIPO_PRENDA" || tipo_prenda === "Todo"){
     filtros["tipo_prenda"] = tipo_prenda
 }
 
+if(tipo_prenda === "MATERIAL" || tipo_material === "Todo"){
+    filtrado_productos
+} else {
+    filtros["material"] = material
+}
+
+if(tipo_seccion === "SECCION" || tipo_seccion === "Todo"){
+    filtrado_productos
+} else {
+    filtros["seccion"] = seccion
+}
+
 const filtracion = filtradoDeProductos.filter(
     p => {
-        return ((filtros['tipo_prenda']? p.tipo === filtros['tipo_prenda']: true)
+        return ((filtros['tipo_prenda']? p.tipo === filtros['tipo_prenda']: true) &&
+                (filtros['material']? p.material === filtros['material']: true) &&
+                (filtros['seccion']? p.tipo2 === filtros['seccion']: true)
         )
     }
 )
