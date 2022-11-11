@@ -1,14 +1,21 @@
-let singleProduct;
-
 const link = window.location.search;
+/* const buscarPagina = new URLSearchParams(link); */
 const buscarPagina = new URLSearchParams(link);
-singleProduct = buscarPagina.get("id").replace('"', "");
+const singleProduct = buscarPagina.get("id").replace('"', "");
 
-const productoPorSeparado = productsList.find((object) => object.id == singleProduct)
+console.log(singleProduct);
+/* const productoPorSeparado = productsList.find((object) => object.id == singleProduct) */
 
-let productosLink = document.getElementById("productos")
+const productoPorSeparado = productsList.find(data => 
+    data.num == singleProduct
+)
 
-productosLink.innerHTML += 
+console.log(productoPorSeparado)
+const productosLink = document.getElementById("productos");
+productosLink.innerHTML = "";
+productosLink.innerHTML = 
+
+/* productosLink.innerHTML +=  */
 
 `<section class="card_list">
     <figure class= "card_figure"><img class= "card_img" src="${productoPorSeparado.imagenProducto}"></figure>
@@ -21,22 +28,6 @@ productosLink.innerHTML +=
         <button id="añadir" class="button is-black button_añadir">Añadir</button>
 
     </article>
-</section>;`
+</section>`
 
 
-/* `
-
-<section class="visualizar_producto">
-    <figure class="seccion_imagen_producto">
-        <img class="imagen_producto" src="${productoPorSeparado.imagenProducto}">
-    </figure>
-
-    <article class="seccion_informacion">
-        <span class="titulo_producto">${productoPorSeparado.item}</span>
-        <span class="texto_info_modelo">${productoPorSeparado.sobreModelo}</span>
-        <span class="texto_precio">${productoPorSeparado.precio}</span>
-        <span class="texto_tipo_prenda">${productoPorSeparado.tipo}</span>
-    </article>
-</section>;
-
-` */
