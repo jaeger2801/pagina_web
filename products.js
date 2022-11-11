@@ -267,13 +267,13 @@ if(tipo_prenda === "TIPO_PRENDA" || tipo_prenda === "Todo"){
 if(tipo_prenda === "MATERIAL" || tipo_material === "Todo"){
     filtrado_productos
 } else {
-    filtros["material"] = material
+    filtros["material"] = tipo_material
 }
 
 if(tipo_seccion === "SECCION" || tipo_seccion === "Todo"){
     filtrado_productos
 } else {
-    filtros["seccion"] = seccion
+    filtros["seccion"] = tipo_seccion
 }
 
 const filtracion = filtradoDeProductos.filter(
