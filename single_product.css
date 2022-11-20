@@ -104,7 +104,30 @@
 }
 
 /* ----------------------------------------------------------------------------- */
+/* Configuracion de la visualización de los productos */
+.card_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
 
+.card_figure{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 70%;
+    width: auto;
+}
+
+.card_article{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 80px;
+    margin-right: 80px;
+}
 
 
 
