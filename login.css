@@ -1,7 +1,7 @@
-/* @import "compass/css3"; */
- /* *, *:before, *:after {
+@import "compass/css3";
+ *, *:before, *:after {
 	 box-sizing: border-box;
-} */
+}
  html {
 	 overflow-y: scroll;
 }
@@ -71,7 +71,7 @@
 	 left: 13px;
 	 color: rgba(255, 255, 255, .5);
 	 transition: all 0.25s ease;
-	 /* -webkit-backface-visibility: hidden; */
+	 -webkit-backface-visibility: hidden;
 	 pointer-events: none;
 	 font-size: 22px;
 }
@@ -140,7 +140,7 @@
 	 background: #1ab188;
 	 color: #fff;
 	 transition: all 0.5s ease;
-	/*  -webkit-appearance: none; */
+	 -webkit-appearance: none;
 }
  .button:hover, .button:focus {
 	 background: #179b77;
