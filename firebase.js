@@ -1,6 +1,7 @@
 
   // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+  /* import { async } from "@firebase/util"; */
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
   import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js"
   
   // TODO: Add SDKs for Firebase products that you want to use
@@ -22,13 +23,25 @@
 
   console.log(db);
 
-async function AddTask(){
+export async function AddTaskLogin(username, password){
   try {
-    const docRef = await addDoc(collection(db, "users"), {
-      first: "Ada",
-      last: "Lovelace",
-      born: 1815
+    const docRef = await addDoc(collection(db, "loginData"), {
+      username, 
+      password,
     });
+    console.log("Document written with ID: ", docRef.id);
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+}
+
+export async function AddTaskRegister(nombre, correo, contraseña){
+  try {
+    const docRef = await addDoc(collection(db, "registerData"), {
+      nombre,
+      correo,
+      contraseña,
+      });
     console.log("Document written with ID: ", docRef.id);
   } catch (e) {
     console.error("Error adding document: ", e);

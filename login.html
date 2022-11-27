@@ -10,24 +10,47 @@
 <!-- partial:index.partial.html -->
 <div class="login-page">
   <div class="form">
+
+
+    <!-- REGISTER -->
+    <!-- CONFIGURACIÓN PARA MOSTRAR EL FORMULARIO DEL REGISTRO -->
     <form class="register-form">
-      <input type="text" placeholder="Nombre"/>
-      <input type="password" placeholder="Contraseña"/>
-      <input type="text" placeholder="Correo"/>
-      <button>Registrarse</button>
+
+      <label for="registerNameTittle"></label>
+      <input id="registerNameTittle" type="text" placeholder="Nombre"/>
+
+      <label for="registerPasswordTittle"></label>
+      <input id="registerPasswordTittle" type="password" placeholder="Contraseña"/>
+
+      <label for="registerEmailTittle"></label>
+      <input id="registerEmailTittle" type="text" placeholder="Correo"/>
+
+      <button id="register-submit-button" type="submit"> Registrarse </button>
       <p class="message">Ya tienes cuenta? <a href="#">Ingresa aqui</a></p>
     </form>
+
+
+    <!-- LOGIN -->
+    <!-- CONFIGURACIÓN PARA MOSTRAR EL FORMULARIO DE INICIO DE SESION -->
     <form class="login-form">
-      <input type="text" placeholder="Nombre"/>
-      <input type="password" placeholder="Contraseña"/>
-      <button>Ingresar</button>
+
+      <label for="loginNameTittle"></label>
+      <input id="loginNameTittle" type="text" placeholder="Nombre"/>
+
+      <label for="loginPasswordTittle"></label>
+      <input id="loginPasswordTittle" type="password" placeholder="Contraseña"/>
+
+      <button id="login-submit-button" type="submit"> Ingresar </button>
       <p class="message">No tienes cuenta? <a href="#">Crear una cuenta</a></p>
     </form>
+
   </div>
 </div>
+
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./login.js"></script>
   <script type="module" src="./firebase.js"></script>
-  
+  <script type="module" src="./main-firebase.js"></script>
+
 </body>
 </html>
