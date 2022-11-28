@@ -23,5 +23,5 @@ function clickFormRegister(e){
     const correo = document.getElementById('registerPasswordTittle').value
     const contraseña = document.getElementById('registerEmailTittle').value
 
-    AddTaskRegister(nombre, correo, contraseña);
+    //AddTaskRegister(nombre, correo, contraseña);
 }

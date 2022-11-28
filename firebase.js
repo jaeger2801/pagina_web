@@ -1,8 +1,9 @@
 
   // Import the functions you need from the SDKs you need
   /* import { async } from "@firebase/util"; */
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
   import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js"
+  import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"
   
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -20,6 +21,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebas
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+  const auth = getAuth(app);
 
   console.log(db);
 
@@ -46,6 +48,22 @@ export async function AddTaskRegister(nombre, correo, contraseña){
   } catch (e) {
     console.error("Error adding document: ", e);
   }
+}
+
+export function newUser(nombre, correo, contraseña) {
+  createUserWithEmailAndPassword(auth, nombre, correo, contraseña)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user; 
+    console.log(user);
+    // ...
+  })
+  .catch((error) => {
+    const errorMessage = error.message;
+    
+    alert(errorMessage)
+  });
+
 }
 
   
