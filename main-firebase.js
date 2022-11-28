@@ -1,27 +1,25 @@
-import {AddTaskLogin, AddTaskRegister} from './firebase.js'
+import {newUser, logIn} from './firebase.js'
 
-const loginButton = document.getElementById('login-submit-button')
-loginButton.addEventListener('click', (e) => clickFormLogin(e))
+const buttonSignIn = document.getElementById('register-submit-button')
+buttonSignIn.addEventListener('click', (e) => signUp(e))
 
-const registerButton = document.getElementById('register-submit-button')
-registerButton.addEventListener('click', (e) =>  clickFormRegister(e))
+const buttonLogIn = document.getElementById('login-submit-button')
+buttonLogIn.addEventListener('click', (e) => logInForm(e))
 
-
-function clickFormLogin(e){
+function signUp(e) {
     e.preventDefault()
-    
-    const username = document.getElementById('loginNameTittle').value
-    const password = document.getElementById('loginPasswordTittle').value
+    const email = document.getElementById('registerEmailTittle')?.value
+    const password = document.getElementById('registerPasswordTittle')?.value
+    const name = document.getElementById('registerNameTittle')?.value
 
-    AddTaskLogin(username, password);
+    newUser(email, password);
 }
 
-function clickFormRegister(e){
-    e.preventDefault()
-    
-    const nombre = document.getElementById('registerNameTittle').value
-    const correo = document.getElementById('registerPasswordTittle').value
-    const contraseña = document.getElementById('registerEmailTittle').value
+function logInForm(e) {
+    e.preventDefault();
+    const email = document.getElementById('loginEmailTittle')?.value
+    const password = document.getElementById('loginPasswordTittle')?.value
 
-    AddTaskRegister(nombre, correo, contraseña);
+
+    
 }

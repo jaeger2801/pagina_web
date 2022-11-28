@@ -23,9 +23,8 @@
   const db = getFirestore(app);
   const auth = getAuth(app);
 
-  console.log(db);
-
-export async function AddTaskLogin(username, password){
+  
+/* export async function AddTaskLogin(username, password){
   try {
     const docRef = await addDoc(collection(db, "loginData"), {
       username, 
@@ -37,18 +36,7 @@ export async function AddTaskLogin(username, password){
   }
 }
 
-export async function AddTaskRegister(nombre, correo, contraseña){
-  try {
-    const docRef = await addDoc(collection(db, "registerData"), {
-      nombre,
-      correo,
-      contraseña,
-      });
-    console.log("Document written with ID: ", docRef.id);
-  } catch (e) {
-    console.error("Error adding document: ", e);
-  }
-}
+*/
 
 export function newUser(nombre, correo, contraseña) {
   createUserWithEmailAndPassword(auth, nombre, correo, contraseña)
@@ -64,6 +52,20 @@ export function newUser(nombre, correo, contraseña) {
     alert(errorMessage)
   });
 
+}
+
+export function logIn(email, password){
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+
+    const user = userCredential.user;
+
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+});
 }
 
   
