@@ -12,7 +12,7 @@ function signUp(e) {
     const password = document.getElementById('registerPasswordTittle')?.value
     const name = document.getElementById('registerNameTittle')?.value
 
-    newUser(email, password);
+    newUser(email, password, name);
 }
 
 function logInForm(e) {
@@ -20,6 +20,6 @@ function logInForm(e) {
     const email = document.getElementById('loginEmailTittle')?.value
     const password = document.getElementById('loginPasswordTittle')?.value
 
-
+    logIn(email, password);
     
 }

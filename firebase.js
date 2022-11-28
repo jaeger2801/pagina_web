@@ -3,7 +3,7 @@
   /* import { async } from "@firebase/util"; */
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
   import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js"
-  import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"
+  import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"
   
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -38,8 +38,8 @@
 
 */
 
-export function newUser(nombre, correo, contraseña) {
-  createUserWithEmailAndPassword(auth, nombre, correo, contraseña)
+export function newUser(name, email, password) {
+  createUserWithEmailAndPassword(auth, name, email, password)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user; 
@@ -57,15 +57,14 @@ export function newUser(nombre, correo, contraseña) {
 export function logIn(email, password){
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-
+    // Signed in 
     const user = userCredential.user;
-
+    // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert(errorMessage);
-});
+  });
 }
 
   
