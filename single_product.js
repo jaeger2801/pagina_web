@@ -21,8 +21,8 @@ productosLink.innerHTML =
     <figure class= "card_figure"><img class= "card_img" src="${productoPorSeparado.imagenProducto}"></figure>
     <article class="card_article">
         <h2 class="name_detail">${productoPorSeparado.item}</h2>
+        <h5 class="price_detail"> $ ${productoPorSeparado.precio} </h5>
         <p class='descri_detail'>${productoPorSeparado.sobreModelo}</p>
-        <h5 class="price_detail"> ${productoPorSeparado.precio}</h5>
         <p class="collect_detail">Collection: ${productoPorSeparado.tipo}</p>
         
         <button id="añadir" class="button is-black button_añadir">Añadir</button>

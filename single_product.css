@@ -113,6 +113,7 @@
 /* ----------------------------------------------------------------------------- */
 /* Configuracion de la visualización de los productos */
 .card_img{
+    border-radius: 10px;
     margin-top: 70px;
     width: 400px;
     height: auto;
@@ -149,12 +150,45 @@
 h2 {
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 800;
 
-    color: #8E8E8E;
+    color: #8E04BF;
 }
 
+.descri_detail{
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #2e2e2e;
+}
+
+.price_detail{
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+
+    color: #2e2e2e;
+}
+
+.collect_detail{
+    margin-top: 10px;
+}
+
+.button.is-black {
+    background-color: #8E04BF;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button {
+    margin-top: 15px;
+    background-color: #8E04BF;
+    color: #8E04BF;
+}
 
 /* ----------------------------------------------------------------------------- */
 /* Seccion footer de le página */
