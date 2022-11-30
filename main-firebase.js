@@ -21,5 +21,4 @@ function logInForm(e) {
     const password = document.getElementById('loginPasswordTittle')?.value
 
     logIn(email, password);
-    
 }
